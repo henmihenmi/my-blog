@@ -1,10 +1,16 @@
 import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import React from "react";
+import Head from "next/head";
+import { Header } from "../components/Header";
 
 const Home = ({ blogs }) => {
   return (
     <div>
+      <Head>
+        <title>ブログ名</title>
+      </Head>
+      <Header />
       <h2>最新の記事</h2>
       <div>
         {blogs.map((blog) => (
