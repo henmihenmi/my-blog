@@ -11,8 +11,8 @@ const Home = ({ blogs }) => {
         <title>ブログ名</title>
       </Head>
       <Header />
-      <h2>最新の記事</h2>
       <div>
+        <h2>最新の記事</h2>
         {blogs.map((blog) => (
           <React.Fragment key={blog.id}>
             <Link href="/blogs/[id]" as={`blogs/${blog.id}`}>

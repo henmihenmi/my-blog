@@ -1,0 +1,17 @@
+.header {
+  border-bottom: 1px solid;
+  display: flex;
+}
+
+.header h2 {
+  margin: 20px;
+}
+
+.anchor {
+  margin: 0 0 0 auto;
+}
+
+.anchor a {
+  display: inline-block;
+  margin: 30px 15px;
+}
