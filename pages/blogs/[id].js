@@ -1,9 +1,12 @@
 import fetch from "isomorphic-unfetch";
+import Link from "next/link";
 import React from "react";
+import { Header } from "../../components/Header";
 
 const BlogId = ({ blog }) => {
   return (
     <div>
+      <Header />
       <h1>{blog.title}</h1>
       <div>
         {blog.tags.map((tag) => (
@@ -13,6 +16,9 @@ const BlogId = ({ blog }) => {
         ))}
       </div>
       <div dangerouslySetInnerHTML={{ __html: `${blog.body}` }}></div>
+      <Link href="/">
+        <a> => Back to home</a>
+      </Link>
     </div>
   );
 };
