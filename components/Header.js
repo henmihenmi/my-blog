@@ -11,9 +11,6 @@ export function Header() {
         <Link href="/">
           <a>Blogs</a>
         </Link>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
       </div>
     </header>
   );
