@@ -8,6 +8,7 @@ const BlogId = ({ blog }) => {
     <div>
       <Header />
       <h1>{blog.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: `${blog.body}` }}></div>
       <div>
         {blog.tags.map((tag) => (
           <React.Fragment key={tag.id}>
@@ -15,7 +16,6 @@ const BlogId = ({ blog }) => {
           </React.Fragment>
         ))}
       </div>
-      <div dangerouslySetInnerHTML={{ __html: `${blog.body}` }}></div>
       <Link href="/">
         <a> => Back to home</a>
       </Link>

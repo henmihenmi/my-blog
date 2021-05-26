@@ -10,7 +10,7 @@ const Home = ({ blogs }) => {
   return (
     <>
       <Head>
-        <title>ブログ名</title>
+        <title>Kentaro's Blog(仮)</title>
       </Head>
       <Header />
       <div className={classes.container}>
